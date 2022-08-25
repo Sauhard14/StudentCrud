@@ -30,4 +30,9 @@ public class StudentService {
     public void delByStudentId(Long studentId){
        studentRepository.deleteById(studentId);
     }
+
+    public Student getByStudentFirstLetter(Long StudentId){
+        Student student = studentRepository.findById(StudentId).orElse(new Student());
+        return student;
+    }
  }
