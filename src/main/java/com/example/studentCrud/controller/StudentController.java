@@ -41,8 +41,8 @@ public class StudentController {
     }
     @GetMapping("/getByStudentSecLetter")
     public ResponseEntity<List<Student>> getByStudentSecLetter(){
-     List<Student> students = studentService.getByStudentSecLetter();
-     return ResponseEntity.ok(students);
+     List<Student> s4 = studentService.getByStudentSecLetter();
+     return ResponseEntity.ok(s4);
     }
 
 
