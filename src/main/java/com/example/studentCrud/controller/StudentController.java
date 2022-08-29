@@ -43,13 +43,13 @@ public class StudentController {
 
     @GetMapping("/getByStudentFirstLetter")
     public ResponseEntity<List<Student>> getByStudentFirstLetter() {
-        List<Student> students = studentService.getStudentByFirstLetter();
-        return ResponseEntity.ok(students);
+        List<Student> s2 = studentService.getStudentByFirstLetter();
+        return ResponseEntity.ok(s2);
     }
 
     @GetMapping("/getByStudentThirdLetter")
     public ResponseEntity<List<Student>> getByStudentThirdLetter() {
-        List<Student> students = studentService.getStudentByThirdLetter();
-        return ResponseEntity.ok(students);
+        List<Student> s3 = studentService.getStudentByThirdLetter();
+        return ResponseEntity.ok(s3);
     }
 }
