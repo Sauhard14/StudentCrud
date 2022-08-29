@@ -31,8 +31,9 @@ public class StudentService {
        studentRepository.deleteById(studentId);
     }
 
-    public Student getByStudentFirstLetter(Long StudentId){
-        Student student = studentRepository.findById(StudentId).orElse(new Student());
-        return student;
+    public List<Student> getByStudentSecLetter(){
+        List<Student> students = studentRepository.getStudentBySecLetter();
+        return students;
     }
- }
+
+}

@@ -39,4 +39,12 @@ public class StudentController {
         studentService.delByStudentId(id);
         return new ResponseEntity<>(HttpStatus.GONE);
     }
+    @GetMapping("/getByStudentSecLetter")
+    public ResponseEntity<List<Student>> getByStudentSecLetter(){
+     List<Student> students = studentService.getByStudentSecLetter();
+     return ResponseEntity.ok(students);
+    }
+
+
+
 }
